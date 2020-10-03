@@ -2,16 +2,13 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
-    const [clazz, setClazz] = useState('nav-link')
 
     function hideAll () {
         const links = document.querySelectorAll('.nav-link')
-        links.forEach(item => item.classList.remove('on-nav')) 
+        links.forEach(item => item.classList.remove('on-nav'))  
     }
 
     function handleClick (event) {
-        // setClazz('nav-link on-nav')
-        // event.target.className = clazz
         hideAll()
         event.target.classList.add('on-nav')
     }

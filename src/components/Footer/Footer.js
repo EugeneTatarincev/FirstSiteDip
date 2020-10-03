@@ -21,7 +21,8 @@ export const Footer = () => {
                     </div>
                     <div className="col-sm">
                         <h4> Кондауров К. С. </h4>
-                        <p> Разработчик аппаратного обеспечения</p>
+                        <p> Разработчик аппаратного комплекса</p>
+                        <br/>
                         <span><FontAwesomeIcon icon={faEnvelope} /> somethig@mail.ru</span>
                     </div>
                 </div>
