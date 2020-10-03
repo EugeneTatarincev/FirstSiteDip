@@ -112,6 +112,34 @@ hr {
   margin: 100px 0 100px 0;
 }
 
+/* MAP */
+
+.contacts div {
+  width: 100% !important;
+  height: 400px !important;
+}
+
+#ps {
+  margin: 20px 0 20px 0;
+}
+
+/* DOWNLOAD */
+
+#img-download {
+  width: 100%;
+}
+
+.a-download {
+  margin: 20px 0 30px 0;
+}
+
+.a-download a {
+  text-decoration: none;
+}
+
+.a-download span {
+  font-size: 25px;
+}
 
 
 

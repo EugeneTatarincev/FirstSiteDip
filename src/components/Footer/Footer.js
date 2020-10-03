@@ -28,7 +28,7 @@ export const Footer = () => {
                 </div>
                 <hr/>
                 <h4 className="h-logo">Greenhouse</h4>
-                <a href="#" className="a-git"><FontAwesomeIcon icon={faGithub} size="lg" /> <FontAwesomeIcon icon={faGit} /></a>
+                <a href="https://github.com/EugeneTatarincev/Diplom-both" className="a-git"><FontAwesomeIcon icon={faGithub} size="lg" /> <FontAwesomeIcon icon={faGit} /></a>
             </div>
         </div>
     )
