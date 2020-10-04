@@ -27,7 +27,7 @@ export const Main = () => {
         </div>
         <div className="container text-center">
             <h2> Особенности нашей теплицы </h2>
-            <img src="aboutGreen.jpg" className="about-green"/>
+            <img src="aboutGreen.jpg" className="about-green" alt="aboutGreean" />
         </div>
         </>
     )
