@@ -7,6 +7,7 @@ import { Main } from './pages/Main'
 import { AboutCrew } from './pages/AboutCrew'
 import { Download } from './pages/Download'
 import { Contacts } from './pages/Contacts'
+import { Demo } from './pages/Demo'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/crew" exact> <AboutCrew /> </Route>
         <Route path="/download" exact> <Download /> </Route>
         <Route path="/contacts" exact> <Contacts /> </Route>
+        <Route path="/demo" exact> <Demo /> </Route>
       </Switch>
 
       <Footer />

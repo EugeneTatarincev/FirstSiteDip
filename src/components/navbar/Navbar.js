@@ -33,6 +33,9 @@ export const Navbar = () => {
                 <li className="nav-item">
                     <Link to="/contacts" className='nav-link' onClick={handleClick}> Контакты </Link>
                 </li>
+                <li className="nav-item">
+                    <Link to="/demo" className='nav-link' onClick={handleClick}> Демо </Link>
+                </li>
             </ul>
         
     </nav>
