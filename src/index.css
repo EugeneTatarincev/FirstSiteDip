@@ -33,7 +33,7 @@
 .footer {
   background: #191919;
   color: white;
-  height: 320px;
+  min-height: 320px;
   padding: 30px;
   border-top: 5px solid #8DD62D;
 }
@@ -71,7 +71,7 @@ hr {
   /* background: url(green_line2.jpg) repeat-x center top; */
   background: url(green_line1.jpg) no-repeat center top;
   width: 100%;
-  height: 550px;
+  min-height: 550px;
 }
 
 .card {
@@ -174,6 +174,130 @@ hr {
   margin-bottom: 100px;
 }
 
+
+/*  ALL RESPONSIVE SHIT IS HERE  */
+
+@media (max-width: 992px) {
+  .about-green {
+    display: none;
+  }
+
+  .card {
+    display: inline-block;
+    position: static !important;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  .navbar-brand {
+    padding: 0;
+    position: absolute;
+    right:0;
+  }
+
+  .navbar-brand img {
+    height: 60px;
+    width: 230px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    display: none;
+  }
+  
+  .navbar-toggle {
+    display: none !important;
+  }
+}
+
+/* NAV ICON 2 */
+
+.nav-icon-2{
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+.nav-icon-2 span{
+  background-color:#FFF;
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+}
+.nav-icon-2 span:nth-child(1){
+  width: 100%;
+  height:  4px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.nav-icon-2 span:nth-child(2){
+  width: 100%;
+  height:  4px;
+  display: block;
+  top: 13px;
+  left: 0px;
+}
+.nav-icon-2 span:nth-child(3){
+  width: 100%;
+  height:  4px;
+  display: block;
+  bottom: 0px;
+  left: 0px;
+}
+.nav-icon-2:not(.open):hover span:nth-child(1){
+  width: 100%;
+  height:  4px;
+  display: block;
+  top: -2px;
+  left: 0px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+}
+.nav-icon-2:not(.open):hover span:nth-child(2){
+  width: 100%;
+  height:  4px;
+  display: block;
+  top: 13px;
+  left: 0px;
+  transition: .4s cubic-bezier(.8, .5, .2, 1.4);
+}
+.nav-icon-2:not(.open):hover span:nth-child(3){
+  width: 100%;
+  height:  4px;
+  display: block;
+  bottom: -2px;
+  left: 0px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+}
+.nav-icon-2.open span:nth-child(1){
+  left:3px;
+  top: 12px;
+  width: 30px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  transform: rotate(90deg);
+  transition-delay: 150ms;
+}
+.nav-icon-2.open span:nth-child(2){
+  left:2px;
+  top: 20px;
+  width: 20px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  transform: rotate(45deg);
+  transition-delay: 50ms;
+}
+.nav-icon-2.open span:nth-child(3){
+  left:14px;
+  top: 20px;
+  width: 20px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  transform: rotate(-45deg);
+  transition-delay: 100ms;
+}
 
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
